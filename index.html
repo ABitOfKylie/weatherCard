@@ -9,26 +9,360 @@
     <title>Weather Or Not</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato&effect=ice|anaglyph">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="ui menu">
-            <div class="header item">
+    <div class="ui menu">
+        <div class="ui container">
+            <div class="item">
                 <img src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Rainbows-PNG/Rainbow_Large_Transparent_PNG_Clipart.png?m=1507172110"> Weather or Not
             </div>
+            <div class="ui simple dropdown item">
+                <i class="home icon"></i> Home city
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    <div class="item">Thousand Oaks, CA</div>
+                    <div class="item">Torrance, CA</div>
+                    <div class="item">Santa Monica, CA</div>
+                    <div class="item">Santa Barbara, CA</div>
+                    <div class="item">San Diego, CA</div>
+                    <div class="item">San Francisco, CA</div>
+                    <div class="item">Lompoc, CA</div>
+                    <div class="item">Lake Tahoe, CA</div>
+                </div>
+            </div>
+            <div class="ui  dropdown labeled search icon button">
+                <i class="world icon"></i>
+                <span class="text">Select City</span>
+                <div class="menu">
+                    <div class="item">Arabic</div>
+                    <div class="item">Chinese</div>
+                    <div class="item">Danish</div>
+                    <div class="item">Dutch</div>
+                    <div class="item">English</div>
+                    <div class="item">French</div>
+                    <div class="item">German</div>
+                    <div class="item">Greek</div>
+                    <div class="item">Hungarian</div>
+                    <div class="item">Italian</div>
+                    <div class="item">Japanese</div>
+                    <div class="item">Korean</div>
+                    <div class="item">Lithuanian</div>
+                    <div class="item">Persian</div>
+                    <div class="item">Polish</div>
+                    <div class="item">Portuguese</div>
+                    <div class="item">Russian</div>
+                    <div class="item">Spanish</div>
+                    <div class="item">Swedish</div>
+                    <div class="item">Turkish</div>
+                    <div class="item">Vietnamese</div>
+                </div>
+            </div>
+            <div class="ui calendar" id="example1">
+                <div class="ui input left icon">
+                    <i class="calendar icon"></i>
+                    <input type="text" placeholder="Date&Time">
+                </div>
+            </div>
+            <div class="item ui calendar " id="datePicker ">
+                <div class="ui button ">
+                    <i class="calendar alternate outline icon "></i><span>Choose Date </span></div>
+            </div>
+            <i class="bordered yellow sun outline icon " id="daze " data-title="Number of Sunny Days " data-content="XX " data-variation="large "></i>
+            <button class="ui icon button" data-title="Number of Sunny Days" data-content="2 be updated" data-variation="large">
+                <i class="cloud icon "></i>
+            </button>
         </div>
+        <!--end of container -->
     </div>
-    <!--end of container -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!--end of ui menu -->
+
+            <!-- start group of cards -->
+        <div class="ui link cards">
+            <!-- start of card -->
+            <div class="ui move reveal">
+                <div class="visible content">
+                    <div class="ui card" value="Today" name="Today">
+                        <img class="ui image" src="./images/blueSky.jpg">
+                        <div class="overlay">
+                            <h1>Today</h1>
+                        </div>
+                        <div class="content">
+                            <div class="header">Thousand Oaks, CA
+                                <br>
+                                <img class="weathericon" src="./images/Sunny.jpg">
+                                <span class="tempCircle">57°</span>
+                                <br>
+                            </div>
+                            <div class="description">Mostly Clear. Low 46F. Winds light and variable
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden content">
+                    <div class="ui card">
+                        <div class="content">
+                            <img class="ui image" src="./images/blueSky.jpg">
+                            <h3>Air Conditions</h3>
+                            <div class="ui list">
+                                <div class="item"><i class="check circle red icon"></i>Pollen</div>
+                                <div class="item"><i class="check circle red icon"></i>UV Index</div>
+                                <div class="item"><i class="green circle outline icon"></i>Air Quality</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of card visible and hidden -->
+            <!-- start of card -->
+            <div class="ui move reveal">
+                <div class="visible content">
+                    <div class="ui card" value="Today" name="Today">
+                        <img class="ui image" src="./images/sanfranrain.jpg">
+                        <div class="overlay">
+                            <h1>Monday</h1>
+                        </div>
+                        <div class="content">
+                            <div class="header">San Francisco, CA
+                                <br>
+                                <img class="weathericon" src="./images/Rain.jpg">
+                                <span class="tempCircle">43°</span>
+                                <br>
+                            </div>
+                            <div class="description">100% Precip. / 0.05 in Rain. Low 46F. Winds WSW at 10 to 15 mph.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden content">
+                    <div class="ui card">
+                        <div class="content">
+                            <img class="ui image" src="./images/silverRain.jpg">
+                            <h3>Air Conditions</h3>
+                            <div class="ui list">
+                                <div class="item"><i class="check circle red icon"></i>Pollen</div>
+                                <div class="item"><i class="check circle red icon"></i>UV Index</div>
+                                <div class="item"><i class="green circle outline icon"></i>Air Quality</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of card visible and hidden -->
+            <!-- start of card -->
+            <div class="ui move reveal">
+                <div class="visible content">
+                    <div class="ui card">
+                        <img class="ui image" src="./images/mostlycloudy.jpg">
+                        <div class="overlay">
+                            <h1>Tuesday</h1>
+                        </div>
+                        <div class="content">
+                            <div class="header">San Diego, CA
+                                <br>
+                                <img class="weathericon" src="./images/PartlyCloudy.jpg">
+                                <span class="tempCircle">78°</span>
+                                <br>
+                            </div>
+                            <div class="description">20% Precip. / 0.00 in Partly Cloudy. Low 54F. Winds WNW at 10 to 15 mph.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden content">
+                    <div class="ui card">
+                        <div class="content">
+                            <img class="ui image" src="./images/mostlycloudy.jpg">
+                            <h3>Air Conditions</h3>
+                            <div class="ui list">
+                                <div class="item"><i class="check circle red icon"></i>Pollen</div>
+                                <div class="item"><i class="check circle red icon"></i>UV Index</div>
+                                <div class="item"><i class="green circle outline icon"></i>Air Quality</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of card visible and hidden -->
+            <!-- start of card -->
+            <div class="ui move reveal">
+                <div class="visible content">
+                    <div class="ui card">
+                        <img class="ui image" src="./images/silverRain.jpg">
+                        <div class="overlay">
+                            <h1>Wednesday</h1>
+                        </div>
+                        <div class="content">
+                            <div class="header">Torrance, CA
+                                <br>
+                                <img class="weathericon" src="./images/Rain.jpg">
+                                <span class="tempCircle">58°</span>
+                                <br>
+                            </div>
+                            <div class="description">70% Precip. / 0.01 in AM Showers. High 58F. ESE winds shifting to WNW at 10 to 15 mph.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden content">
+                    <div class="ui card">
+                        <div class="content">
+                            <img class="ui image" src="./images/silverRain.jpg">
+                            <h3>Air Conditions</h3>
+                            <div class="ui list">
+                                <div class="item"><i class="green check circle outline icon"></i>Pollen</div>
+                                <div class="item"><i class="yellow check circle red icon"></i>UV Index</div>
+                                <div class="item"><i class="green check circle outline icon"></i>Air Quality</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of card visible and hidden -->
+            <!-- start of card -->
+            <div class="ui move reveal">
+                <div class="visible content">
+                    <div class="ui card">
+                        <img class="ui image" src="./images/snowflakes.jpg">
+                        <div class="overlay">
+                            <h1>Thursday</h1>
+                        </div>
+                        <div class="content">
+                            <div class="header">Lake Tahoe, CA
+                                <br>
+                                <img class="weathericon" src="./images/snowIcon.jpg">
+                                <span class="tempCircle">28°</span>
+                                <br>
+                            </div>
+                            <div class="description">90% Precip. / 2 in Snow. High 31F. Winds SW at 10 to 20 mph.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden content">
+                    <div class="ui card">
+                        <div class="content">
+                            <img class="ui image" src="./images/snowflakes.jpg">
+                            <h3>Air Conditions</h3>
+                            <div class="ui list">
+                                <div class="item"><i class="green circle outline icon"></i>Pollen</div>
+                                <div class="item"><i class="check circle red icon"></i>UV Index</div>
+                                <div class="item"><i class="green circle outline icon"></i>Air Quality</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of card visible and hidden -->
+            <!-- start of card -->
+            <div class="ui move reveal">
+                <div class="visible content">
+                    <div class="ui card">
+                        <img class="ui image" src="./images/blueSky.jpg">
+                        <div class="overlay">
+                            <h1>Friday</h1>
+                        </div>
+                        <div class="content">
+                            <div class="header">Santa Barbara, CA
+                                <br>
+                                <img class="weathericon" src="./images/Sunny.jpg">
+                                <span class="tempCircle">65°</span>
+                                <br>
+                            </div>
+                            <div class="description">0% Precip. / 0.00 in Sunny. High 66F. Winds NW at 10 to 20 mph.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden content">
+                    <div class="ui card">
+                        <div class="content">
+                            <img class="ui image" src="./images/blueSky.jpg">
+                            <h3>Air Conditions</h3>
+                            <div class="ui list">
+                                <div class="item"><i class="yellow circle outline icon"></i>Pollen</div>
+                                <div class="item"><i class="check circle red icon"></i>UV Index</div>
+                                <div class="item"><i class="green circle outline icon"></i>Air Quality</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of card visible and hidden -->
+            <!-- start of card -->
+            <div class="ui move reveal">
+                <div class="visible content">
+                    <div class="ui card">
+                        <img class="ui image" src="./images/blueSky.jpg">
+                        <div class="overlay">
+                            <h1>Saturday</h1>
+                        </div>
+                        <div class="content">
+                            <div class="header">Santa Monica, CA
+                                <br>
+                                <img class="weathericon" src="./images/Sunny.jpg">
+                                <span class="tempCircle">65°</span>
+                                <br>
+                            </div>
+                            <div class="description">0% Precip. / 0.00 in Sunny. High near 60F. N winds shifting to WSW at 10 to 20 mph.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden content">
+                    <div class="ui card">
+                        <div class="content">
+                            <img class="ui image" src="./images/blueSky.jpg">
+                            <h3>Air Conditions</h3>
+                            <div class="ui list">
+                                <div class="item"><i class="yellow circle outline icon"></i>Pollen</div>
+                                <div class="item"><i class="check circle red icon"></i>UV Index</div>
+                                <div class="item"><i class="green circle outline icon"></i>Air Quality</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of card visible and hidden -->
+            <!-- start of card -->
+            <div class="ui move reveal">
+                <div class="visible content">
+                    <div class="ui card">
+                        <img class="ui image" src="./images/silverRain.jpg">
+                        <div class="overlay">
+                            <h1>Sunday</h1>
+                        </div>
+                        <div class="content">
+                            <div class="header">Lompoc, CA
+                                <br>
+                                <img class="weathericon" src="./images/Rain.jpg">
+                                <span class="tempCircle">58°</span>
+                                <br>
+                            </div>
+                            <div class="description">70% Precip. / 0.01 in AM Showers. High 58F. ESE winds shifting to WNW at 10 to 15 mph.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden content">
+                    <div class="ui card">
+                        <div class="content">
+                            <img class="ui image" src="./images/silverRain.jpg">
+                            <h3>Air Conditions</h3>
+                            <div class="ui list">
+                                <div class="item"><i class="green circle outline icon"></i>Pollen</div>
+                                <div class="item"><i class="yellow check circle red icon"></i>UV Index</div>
+                                <div class="item"><i class="green circle outline icon"></i>Air Quality</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of card visible and hidden -->
+        </div>
+        <!-- end of card grouping -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=" anonymous "></script>
     <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
+    window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js "><\/script>')
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.js "></script>
+    <script type="text/javascript " src="app.js "></script>
 </body>
 
 </html>
